@@ -7,6 +7,7 @@ pipeline:
   build:
     image: index.qiniu.com/spock/golang:1.7
     commands:
+      - cat .drone.yml
       - make build
       - make test
     when:
