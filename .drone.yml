@@ -9,4 +9,5 @@ pipeline:
     commands:
       - make build
       - make test
-      - ls
+    when:
+      commit_message: *svc=abc*
